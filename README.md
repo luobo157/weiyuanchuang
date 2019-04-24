@@ -16,7 +16,7 @@ ChangeEncodingToutf8_3.py
 deleteSpacebarAndN.py
 
 这个文件可以去掉多余的空格和换行
-注意：由于并没有限定文件类型，制定的文件加下的所有文件都会被替换掉
+注意：由于并没有限定文件类型，指定的文件加下的所有文件都会被替换掉
 
 BaiduTranslateAutoToAuto.py
 
