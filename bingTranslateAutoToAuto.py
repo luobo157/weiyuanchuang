@@ -1,7 +1,7 @@
-# 必应翻译的引用
 #本文件为封装的函数，使用方法为a1 = bingTranslateAutoToAuto（content, _from_, _to_）
 #content为string类型的utf8编码的数据
 
+# 必应翻译的引用
 import urllib.request
 import urllib.parse
 
