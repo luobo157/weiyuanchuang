@@ -1,3 +1,23 @@
+# coding: utf8
+'''
+ @Author: LCY
+ @url：https://www.jb51.net/article/145740.htm
+ @Contact: lchuanyong@126.com
+ @blog: http://http://blog.csdn.net/lcyong_
+ @Date: 2018-01-15
+ @Time: 19:19
+ 说明： appid和secretKey为百度翻译文档中自带的，需要切换为自己的
+   python2和python3部分库名称更改对应如下：
+   httplib  ----> http.client
+   md5   ----> hashlib.md5
+   urllib.quote ----> urllib.parse.quote
+ 官方链接：
+   http://api.fanyi.baidu.com/api/trans/product/index
+
+'''
+
+
+
 #本文件为封装的函数，使用方法为a1 = BaiduTranslateAutoToAuto（content, _from_, _to_）
 #content为string类型的utf8编码的数据
 #需要添加"我的appid"和"我的key"才可使用
