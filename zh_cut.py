@@ -17,7 +17,7 @@ def cut_sent(para):
 with open('./article/111.txt') as f:
     para = f.read()
     sents = cut_sent(para)
-#将分割后的内容写入
+#将分割后的内容以覆盖的方式'w'写入
 with open('./article/111.txt', 'w') as f:
      f.write("\n".join(sents))
     
