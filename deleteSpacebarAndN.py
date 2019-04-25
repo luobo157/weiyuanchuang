@@ -17,12 +17,13 @@ def reset():
         filename = os.path.splitext(files)[0]  # 文件名
         filetype = os.path.splitext(files)[1]  # 文件扩展名
         filePath = path + filename + filetype
-        # 此处写入需要替换的代码，空格"",空字符"",换行符号"\n"
+        # 此处写入需要替换的代码，空格"",空字符"",换行符号"\n",全角空格"\u3000"多被用来执行首行缩进
         # 1.把所有空格替换成空字符
         # 2.把所有换行符替换成空格
         # 3.把两个空格替换成一个空格，多执行几次，就只剩下一个空格了
         # 4.然后把空格替换成换行符号
         alter(filePath, " ", "")
+        alter(filePath, "\u3000", "")
         alter(filePath, "\n", " ")
         alter(filePath, "  ", " ")
         alter(filePath, "  ", " ")
