@@ -12,3 +12,12 @@ def cut_sent(para):
     para = para.rstrip()  # 段尾如果有多余的\n就去掉它
         # 很多规则中会考虑分号;，但是这里我把它忽略不计，破折号、英文双引号等同样忽略，需要的再做些简单调整即可。
     return para.split("\n")
+
+#读取文件，用函数分割
+with open('./article/111.txt') as f:
+    para = f.read()
+    sents = cut_sent(para)
+#将分割后的内容写入
+with open('./article/111.txt', 'w') as f:
+     f.write("\n".join(sents))
+    
