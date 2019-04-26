@@ -1,7 +1,7 @@
 # 伪原创相关
 
 基本思路
-======
+--
 
 1.检测制定文件夹所有文件，读取所有txt或者word文件
 
@@ -26,7 +26,7 @@
 
 
 相关文件的作用
-===
+---
 ChangeEncodingToutf8.py
 
 ChangeEncodingToutf8_2.py
