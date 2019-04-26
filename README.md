@@ -1,7 +1,10 @@
 # weiyuanchuang
 
-基本思路
-![baidu](http://jinnuowj.com/images/weiyuanchuang.jpg "基本思路")  
+##基本思路
+
+###1.检测制定文件夹所有文件，读取所有txt或者word文件
+
+
 
 伪原创相关
 
