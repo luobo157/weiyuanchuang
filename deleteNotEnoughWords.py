@@ -8,7 +8,7 @@ import os
 fns = (fn for fn in os.listdir() if fn.endswith('.txt'))
 
 for fn in fns:
-    if os.path.getsize(fn) < 700:   #小于700字节的文件，字节删除掉
+    if os.path.getsize(fn) < 700:   #小于700字节的文件，直接删除掉
         os.remove(fn)
     else:
         pass
