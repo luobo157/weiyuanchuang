@@ -1,6 +1,9 @@
+# -*- coding: utf-8 -*-
 # 版本为python3，如果为python2需要在字符串前面加上u
-#中文分句
+# 检测段落，段落小于5，执行中文分句
 
+
+import os
 import re
 
 def cut_sent(para):
@@ -13,11 +16,18 @@ def cut_sent(para):
         # 很多规则中会考虑分号;，但是这里我把它忽略不计，破折号、英文双引号等同样忽略，需要的再做些简单调整即可。
     return para.split("\n")
 
-#读取文件，用函数分割
-with open('./article/111.txt') as f:
-    para = f.read()
-    sents = cut_sent(para)
-#将分割后的内容以覆盖的方式'w'写入
-with open('./article/111.txt', 'w') as f:
-     f.write("\n".join(sents))
+#获取当前文件夹中所有记事本txt文件清单
+fns = (fn for fn in os.listdir() if fn.endswith('.txt'))
+for fn in fns:
+    num_lines = sum(1 for line in open(fn,'rb'))
+    if num_lines < 6:
+        #读取文件，小于等于5行的，用函数分割
+        with open(fn) as f:
+            para = f.read()
+            sents = cut_sent(para)
+        # 将分割后的内容以覆盖的方式'w'写入
+        with open(fn,'w') as f:
+            f.write("\n".join(sents))
+    else:
+        pass
     
