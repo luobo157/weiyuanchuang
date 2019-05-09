@@ -19,7 +19,7 @@ def cut_sent(para):
 #获取当前文件夹中所有记事本txt文件清单
 fns = (fn for fn in os.listdir() if fn.endswith('.txt'))
 for fn in fns:
-    num_lines = sum(1 for line in open(fn,'rb'))
+    num_lines = sum(1 for line in open(fn,'rb')) #'rb'也可以替换为'r', encoding='UTF-8'
     if num_lines < 6:
         #读取文件，小于等于5行的，用函数分割
         with open(fn) as f:
