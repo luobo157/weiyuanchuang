@@ -5,8 +5,8 @@ import time
 import hashlib
 import json
 
-appid = "20181130000241491"
-baidukey = "hRIiKPZLQyZAsfuabRCz"
+appid = "我的appid"
+baidukey = "我的key"
 api_url = "http://api.fanyi.baidu.com/api/trans/vip/translate"
 my_appid = appid
 cyber = baidukey
