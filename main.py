@@ -13,6 +13,13 @@ from bd_translate import bd_auto_to_jp
 from bd_translate import bd_auto_to_kor
 from bd_translate import bd_auto_to_en
 
+from sg_translate import sg_zh_to_ja
+from sg_translate import sg_zh_to_ko
+from sg_translate import sg_zh_to_en
+from sg_translate import sg_ja_to_zh
+from sg_translate import sg_ko_to_zh
+from sg_translate import sg_en_to_zh
+
 # 获取当前文件夹中所有记事本txt文件清单，分段翻译
 fns = (fn for fn in os.listdir() if fn.endswith('.txt'))
 for fn in fns:
