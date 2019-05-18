@@ -47,7 +47,9 @@ bd_translate.py
 
 bing_translate.py
 
-这两个文件封装着百度翻译和必应翻译函数，在main.py中会被引用到
+sg_translate.py 搜狗翻译并没有auto选项
+
+这两个文件封装着百度翻译，必应翻译函数，搜狗翻译函数，在main.py中会被引用到
 
 /article，这个文件夹本来是准备作为指定文件夹来存放txt文件的，然而并没有做出来
 
